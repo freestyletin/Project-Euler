@@ -1,0 +1,15 @@
+def main(x, w, y, z, v):
+    while w < 997:
+        w = w + 3
+        y = y + w
+        print("Multiple: %d Running total: %d" % (w, y))
+    while x < 995:
+        x = x + 5
+        if x / 3 - round(x / 3, 0) == 0:
+            print("Duplicate value.")
+        else:
+            z = z + x
+            print("Multiple: %d Running total: %d" % (x, z))
+    print("%d %d %d %d and the sum is %d" % (w, x, y, z, y + z))
+
+main(0, 0, 0, 0, 0)
